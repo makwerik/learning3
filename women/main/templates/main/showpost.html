@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'main/base.html' %}
 
-</body>
-</html>
+{% block title %}{{ womenpost.0 }}{% endblock %}
+
+{% block content %}
+    {% for w in womenpost %}
+        <div class="fulltext">
+            <h1>{{ w.title }}</h1>
+            <p>{{ w.content|linebreaks }}</p>
+        </div>
+
+    {% endfor %}
+{% endblock %}
+

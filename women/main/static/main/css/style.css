@@ -1,0 +1,22 @@
+body {
+    background: #2e98b0;
+}
+
+a {
+    color: #0075B2; /* Цвет обычной ссылки */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+     margin-right: 25%;
+}
+
+a:hover {
+    color: #fff; /* Цвет ссылки при наведении */
+    text-decoration: underline; /* Добавляем подчёркивание */
+}
+
+.form-title {
+    text-align: center;
+}
+
+.fulltext {
+    text-align: center;
+}
